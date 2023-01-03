@@ -1,0 +1,9 @@
+<article>
+    <h1>Pick Your Product Type</h1>
+    <select [(ngModel)]="selectData"
+    (change)="selectValueChange()"
+    class="custom-select form-control">
+        <option *ngFor="let item of productTypes"
+        [value]="item.type">{{item.text}}</option>
+      </select>
+</article>
